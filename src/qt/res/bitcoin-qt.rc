@@ -21,7 +21,7 @@ BEGIN
         BLOCK "040904E4" // U.S. English - multilingual (hex)
         BEGIN
             VALUE "CompanyName",        "Tacocoin"
-            VALUE "FileDescription",    "LTacocoin-Qt (OSS GUI client for Litecoin)"
+            VALUE "FileDescription",    "Tacocoin-Qt (OSS GUI client for Litecoin)"
             VALUE "FileVersion",        VER_FILEVERSION_STR
             VALUE "InternalName",       "tacocoin-qt"
             VALUE "LegalCopyright",     COPYRIGHT_STR
