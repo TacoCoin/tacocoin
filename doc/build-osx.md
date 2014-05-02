@@ -76,7 +76,7 @@ Installing the dependencies using MacPorts is very straightforward.
 
 1. Clone the github tree to get the source code and go into the directory.
 
-        git clone git@github.com:tacocoin-project/tacocoin.git tacocoin
+        git clone git@github.com:tacocoin/tacocoin.git tacocoin
         cd tacocoin
 
 2.  Build tacocoind:
