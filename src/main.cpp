@@ -1988,14 +1988,14 @@ bool CBlock::AddToBlockIndex(CValidationState &state, const CDiskBlockPos &pos)
 int GetAuxPowStartBlock()
 {
     if (fTestNet)
-        return INT_MAX; // never
+        return 0; // Test network is only running merged capable clients
     else
         return INT_MAX; // never
 }
 
 int GetOurChainID()
 {
-    return 0x0000;
+    return 0x0018;
 }
 
 bool CBlockHeader::CheckProofOfWork(int nHeight) const
