@@ -1,0 +1,13 @@
+script: make -f makefile.unix
+
+install:
+  - cd src
+   
+language: cpp
+ 
+before_install:
+  - sudo apt-get install libssl-dev libdb5.1++-dev libboost-all-dev libminiupnpc-dev -y
+
+branches:
+  only:
+    - master
