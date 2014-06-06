@@ -13,6 +13,7 @@ License
 -------
 
 Copyright (c) 2009-2012 Bitcoin Developers
+Copyright (c) 20014 Tacocoin Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
@@ -172,8 +173,8 @@ directory. We have to first create the RPC configuration file, though.
 Run `./tacocoind` to get the filename where it should be put, or just try these
 commands:
 
-    echo -e "rpcuser=tacocoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/Litecoin/tacocoin.conf"
-    chmod 600 "/Users/${USER}/Library/Application Support/Litecoin/tacocoin.conf"
+    echo -e "rpcuser=tacocoinrpc\nrpcpassword=$(xxd -l 16 -p /dev/urandom)" > "/Users/${USER}/Library/Application Support/tacocoin/tacocoin.conf"
+    chmod 600 "/Users/${USER}/Library/Application Support/tacocoin/tacocoin.conf"
 
 When next you run it, it will start downloading the blockchain, but it won't
 output anything while it's doing this. This process may take several hours.
