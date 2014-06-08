@@ -4,12 +4,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Litecoin</source>
+        <source>About Tacocoin</source>
         <translation>Sobre o TacoCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Litecoin&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Tacocoin&lt;/b&gt; version</source>
         <translation>Versão do &lt;b&gt;TacoCoin&lt;/b&gt;</translation>
     </message>
     <message>
@@ -34,7 +34,7 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location line="+0"/>
-        <source>The Litecoin developers</source>
+        <source>The Tacocoin developers</source>
         <translation>Desenvolvedores do TacoCoin</translation>
     </message>
 </context>
@@ -67,7 +67,7 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Litecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Tacocoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Estes são os seus endereços TacoCoin para receber pagamentos. Você pode querer enviar um endereço diferente para cada remetente, para acompanhar quem está pagando.</translation>
     </message>
     <message>
@@ -82,7 +82,7 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Litecoin address</source>
+        <source>Sign a message to prove you own a Tacocoin address</source>
         <translation>Assine uma mensagem para provar que você é dono de um endereço TacoCoin</translation>
     </message>
     <message>
@@ -107,7 +107,7 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Litecoin address</source>
+        <source>Verify a message to ensure it was signed with a specified Tacocoin address</source>
         <translation>Verificar mensagem para se assegurar que ela foi assinada pelo dono de um endereço TacoCoin específico.</translation>
     </message>
     <message>
@@ -122,7 +122,7 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Tacocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Estes são os seus endereços TacoCoin para receber pagamentos. Você pode querer enviar um endereço diferente para cada remetente, para acompanhar quem está pagando.</translation>
     </message>
     <message>
@@ -275,7 +275,7 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location line="-56"/>
-        <source>Litecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tacocoins from being stolen by malware infecting your computer.</source>
+        <source>Tacocoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tacocoins from being stolen by malware infecting your computer.</source>
         <translation>O TacoCoin irá fechar agora para finalizar o processo de encriptação. Lembre-se de que encriptar sua carteira não protege totalmente suas TacoCoins de serem roubadas por malwares que tenham infectado o seu computador.</translation>
     </message>
     <message>
@@ -374,7 +374,7 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Litecoin</source>
+        <source>Show information about Tacocoin</source>
         <translation>Mostrar informação sobre TacoCoin</translation>
     </message>
     <message>
@@ -419,12 +419,12 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Litecoin address</source>
+        <source>Send coins to a Tacocoin address</source>
         <translation>Enviar moedas para um endereço TacoCoin</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Litecoin</source>
+        <source>Modify configuration options for Tacocoin</source>
         <translation>Modificar opções de configuração para TacoCoin</translation>
     </message>
     <message>
@@ -455,7 +455,7 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Litecoin</source>
+        <source>Tacocoin</source>
         <translation>TacoCoin</translation>
     </message>
     <message>
@@ -480,7 +480,7 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Litecoin</source>
+        <source>&amp;About Tacocoin</source>
         <translation>&amp;Sobre o TacoCoin</translation>
     </message>
     <message>
@@ -500,12 +500,12 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <source>Sign messages with your Tacocoin addresses to prove you own them</source>
         <translation>Assine mensagems com seus endereços TacoCoin para provar que você é dono deles</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Tacocoin addresses</source>
         <translation>Verificar mensagens para se assegurar que elas foram assinadas pelo dono de Endereços TacoCoin específicos</translation>
     </message>
     <message>
@@ -536,12 +536,12 @@ Este produto inclui software desenvolvido pelo Projeto OpenSSL para uso no OpenS
     </message>
     <message>
         <location line="+47"/>
-        <source>Litecoin client</source>
+        <source>Tacocoin client</source>
         <translation>Cliente TacoCoin</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Litecoin network</source>
+        <source>%n active connection(s) to Tacocoin network</source>
         <translation><numerusform>%n conexão ativa na rede TacoCoin</numerusform><numerusform>%n conexões ativas na rede TacoCoin</numerusform></translation>
     </message>
     <message>
@@ -655,7 +655,7 @@ Endereço: %4</translation>
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Tacocoin address or malformed URI parameters.</source>
         <translation>URI não pode ser decodificado! Isso pode ter sido causado por um endereço TacoCoin inválido ou por parâmetros URI malformados.</translation>
     </message>
     <message>
@@ -670,7 +670,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Tacocoin can no longer continue safely and will quit.</source>
         <translation>Um erro fatal ocorreu. TacoCoin não pode continuar em segurança e irá fechar.</translation>
     </message>
 </context>
@@ -736,7 +736,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Litecoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Tacocoin address.</source>
         <translation>O endereço digitado &quot;%1&quot; não é um endereço TacoCoin válido.</translation>
     </message>
     <message>
@@ -755,7 +755,7 @@ Endereço: %4</translation>
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Litecoin-Qt</source>
+        <source>Tacocoin-Qt</source>
         <translation>TacoCoin-Qt</translation>
     </message>
     <message>
@@ -818,12 +818,12 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Litecoin after logging in to the system.</source>
+        <source>Automatically start Tacocoin after logging in to the system.</source>
         <translation>Iniciar TacoCoin automaticamente após se logar no sistema.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Litecoin on system login</source>
+        <source>&amp;Start Tacocoin on system login</source>
         <translation>Iniciar TacoCoin no login do sistema</translation>
     </message>
     <message>
@@ -843,7 +843,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Tacocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Abrir as portas do cliente TacoCoin automaticamente no roteador. Isto só funcionará se seu roteador suportar UPnP e esta função estiver habilitada.</translation>
     </message>
     <message>
@@ -853,7 +853,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Litecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Tacocoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Conectar à rede TacoCoin através de um proxy SOCKS (ex. quando estiver usando através do Tor)</translation>
     </message>
     <message>
@@ -928,7 +928,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Litecoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Tacocoin.</source>
         <translation>A língua da interface com usuário pode ser escolhida aqui. Esta configuração só surtirá efeito após reiniciar o TacoCoin.</translation>
     </message>
     <message>
@@ -943,7 +943,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Litecoin addresses in the transaction list or not.</source>
+        <source>Whether to show Tacocoin addresses in the transaction list or not.</source>
         <translation>Mostrar ou não endereços TacoCoin na lista de transações.</translation>
     </message>
     <message>
@@ -995,7 +995,7 @@ Endereço: %4</translation>
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Litecoin.</source>
+        <source>This setting will take effect after restarting Tacocoin.</source>
         <translation>Esta configuração surtirá efeito após reinicializar o aplicativo TacoCoin</translation>
     </message>
     <message>
@@ -1014,7 +1014,7 @@ Endereço: %4</translation>
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tacocoin network after a connection is established, but this process has not completed yet.</source>
         <translation>A informação mostrada pode estar desatualizada. Sua carteira sincroniza automaticamente com a rede TacoCoin depois que a conexão é estabelecida, mas este processo pode não estar completo ainda.</translation>
     </message>
     <message>
@@ -1218,7 +1218,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Litecoin-Qt help message to get a list with possible Litecoin command-line options.</source>
+        <source>Show the Tacocoin-Qt help message to get a list with possible Tacocoin command-line options.</source>
         <translation>Mostrar mensagem de ajuda do TacoCoin-Qt para obter uma lista com possíveis opções da linha de comando do TacoCoin.</translation>
     </message>
     <message>
@@ -1238,12 +1238,12 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="-104"/>
-        <source>Litecoin - Debug window</source>
+        <source>Tacocoin - Debug window</source>
         <translation>TacoCoin - Janela de Depuração</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Litecoin Core</source>
+        <source>Tacocoin Core</source>
         <translation>Núcleo TacoCoin</translation>
     </message>
     <message>
@@ -1253,7 +1253,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Litecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Tacocoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Abrir o arquivo de log de depuração do TacoCoin do diretório atual de dados. Isso pode levar alguns segundos para arquivos de log grandes.</translation>
     </message>
     <message>
@@ -1263,7 +1263,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Litecoin RPC console.</source>
+        <source>Welcome to the Tacocoin RPC console.</source>
         <translation>Bem-vindo ao console TacoCoin RPC.</translation>
     </message>
     <message>
@@ -1447,7 +1447,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Litecoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Tacocoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation>Digite um endereço TacoCoin (exemplo: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
@@ -1512,7 +1512,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Litecoin address</source>
+        <source>Sign the message to prove you own this Tacocoin address</source>
         <translation>Assinar mensagem para provar que você é dono deste endereço TacoCoin</translation>
     </message>
     <message>
@@ -1548,7 +1548,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Tacocoin address</source>
         <translation>Verificar mensagem para se assegurar que ela foi assinada pelo dono de um endereço TacoCoin específico.</translation>
     </message>
     <message>
@@ -1564,7 +1564,7 @@ Endereço: %4</translation>
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Litecoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Tacocoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation>Digite um endereço TacoCoin (exemplo: Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
@@ -1574,7 +1574,7 @@ Endereço: %4</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Litecoin signature</source>
+        <source>Enter Tacocoin signature</source>
         <translation>Entre com a assinatura TacoCoin</translation>
     </message>
     <message>
@@ -1648,7 +1648,7 @@ Endereço: %4</translation>
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Litecoin developers</source>
+        <source>The Tacocoin developers</source>
         <translation>Desenvolvedores do TacoCoin</translation>
     </message>
     <message>
@@ -2186,7 +2186,7 @@ Endereço: %4</translation>
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Litecoin version</source>
+        <source>Tacocoin version</source>
         <translation>Versão do TacoCoin</translation>
     </message>
     <message>
@@ -2305,7 +2305,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Tacocoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, você deve especificar uma senha rpcpassword no arquivo de configuração:⏎
 %s⏎
@@ -2316,7 +2316,7 @@ rpcpassword=%s⏎
 O nome de usuário e a senha NÃO PODEM ser os mesmos.⏎
 Se o arquivo não existir, crie um com permissão de leitura apenas para o dono.⏎
 É recomendado também definir um alertnotify para que você seja notificado de problemas;⏎
-por exemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo.com⏎
+por exemplo: alertnotify=echo %%s | mail -s &quot;Tacocoin Alert&quot; admin@foo.com⏎
 </translation>
     </message>
     <message>
@@ -2331,7 +2331,7 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Litecoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Tacocoin is probably already running.</source>
         <translation>Não foi possível obter exclusividade de escrita no endereço %s. O TacoCoin provavelmente já está rodando.</translation>
     </message>
     <message>
@@ -2376,7 +2376,7 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Litecoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Tacocoin will not work properly.</source>
         <translation>Cuidado: Por favor, verifique que a data e hora do seu computador estão corretas! If o seu relógio estiver errado, o TacoCoin não irá funcionar corretamente.</translation>
     </message>
     <message>
@@ -2626,7 +2626,7 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Litecoin Wiki for SSL setup instructions)</source>
+        <source>SSL options: (see the Tacocoin Wiki for SSL setup instructions)</source>
         <translation>Opções SSL: (veja a Wiki do TacoCoin para instruções de configuração SSL)</translation>
     </message>
     <message>
@@ -2816,12 +2816,12 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Litecoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Tacocoin</source>
         <translation>Erro ao carregar wallet.dat: Carteira requer uma versão mais nova do TacoCoin</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Litecoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Tacocoin to complete</source>
         <translation>A Carteira precisou ser reescrita: reinicie o TacoCoin para completar</translation>
     </message>
     <message>
@@ -2881,7 +2881,7 @@ por exemplo: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Litecoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Tacocoin is probably already running.</source>
         <translation>Impossível vincular a %s neste computador. O TacoCoin provavelmente já está rodando.</translation>
     </message>
     <message>

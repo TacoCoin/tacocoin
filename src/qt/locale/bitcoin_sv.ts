@@ -4,12 +4,12 @@
     <name>AboutDialog</name>
     <message>
         <location filename="../forms/aboutdialog.ui" line="+14"/>
-        <source>About Litecoin</source>
+        <source>About Tacocoin</source>
         <translation>Om TacoCoin</translation>
     </message>
     <message>
         <location line="+39"/>
-        <source>&lt;b&gt;Litecoin&lt;/b&gt; version</source>
+        <source>&lt;b&gt;Tacocoin&lt;/b&gt; version</source>
         <translation>&lt;b&gt;TacoCoin&lt;/b&gt;-version</translation>
     </message>
     <message>
@@ -35,7 +35,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+0"/>
-        <source>The Litecoin developers</source>
+        <source>The Tacocoin developers</source>
         <translation>TacoCoin-utvecklarna</translation>
     </message>
 </context>
@@ -68,7 +68,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="+63"/>
-        <source>These are your Litecoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
+        <source>These are your Tacocoin addresses for receiving payments. You may want to give a different one to each sender so you can keep track of who is paying you.</source>
         <translation>Detta är dina TacoCoin-adresser för att ta emot betalningar.  Du kan ge varje avsändare en egen adress så att du kan hålla reda på vem som betalar dig.</translation>
     </message>
     <message>
@@ -83,7 +83,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+11"/>
-        <source>Sign a message to prove you own a Litecoin address</source>
+        <source>Sign a message to prove you own a Tacocoin address</source>
         <translation>Signera ett meddelande för att bevisa att du äger denna adress</translation>
     </message>
     <message>
@@ -108,7 +108,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-44"/>
-        <source>Verify a message to ensure it was signed with a specified Litecoin address</source>
+        <source>Verify a message to ensure it was signed with a specified Tacocoin address</source>
         <translation>Verifiera meddelandet för att vara säker på att den var signerad med den specificerade TacoCoin-adressen</translation>
     </message>
     <message>
@@ -123,7 +123,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location filename="../addressbookpage.cpp" line="-5"/>
-        <source>These are your Litecoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
+        <source>These are your Tacocoin addresses for sending payments. Always check the amount and the receiving address before sending coins.</source>
         <translation>Detta är dina TacoCoin adresser för att skicka betalningar. Kolla alltid summan och den mottagande adressen innan du skickar TacoCoins.</translation>
     </message>
     <message>
@@ -276,7 +276,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-56"/>
-        <source>Litecoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tacocoins from being stolen by malware infecting your computer.</source>
+        <source>Tacocoin will close now to finish the encryption process. Remember that encrypting your wallet cannot fully protect your tacocoins from being stolen by malware infecting your computer.</source>
         <translation>Programmet kommer nu att stänga ner för att färdigställa krypteringen. Tänk på att en krypterad plånbok inte skyddar mot stöld om din dator är infekterad med en keylogger.</translation>
     </message>
     <message>
@@ -375,7 +375,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+4"/>
-        <source>Show information about Litecoin</source>
+        <source>Show information about Tacocoin</source>
         <translation>Visa information om TacoCoin</translation>
     </message>
     <message>
@@ -420,12 +420,12 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="-347"/>
-        <source>Send coins to a Litecoin address</source>
+        <source>Send coins to a Tacocoin address</source>
         <translation>Skicka mynt till en TacoCoin-adress</translation>
     </message>
     <message>
         <location line="+49"/>
-        <source>Modify configuration options for Litecoin</source>
+        <source>Modify configuration options for Tacocoin</source>
         <translation>Ändra konfigurationsalternativ för TacoCoin</translation>
     </message>
     <message>
@@ -456,7 +456,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     <message>
         <location line="-165"/>
         <location line="+530"/>
-        <source>Litecoin</source>
+        <source>Tacocoin</source>
         <translation>TacoCoin</translation>
     </message>
     <message>
@@ -481,7 +481,7 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+22"/>
-        <source>&amp;About Litecoin</source>
+        <source>&amp;About Tacocoin</source>
         <translation>&amp;Om TacoCoin</translation>
     </message>
     <message>
@@ -501,12 +501,12 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+7"/>
-        <source>Sign messages with your Litecoin addresses to prove you own them</source>
+        <source>Sign messages with your Tacocoin addresses to prove you own them</source>
         <translation>Signera meddelanden med din TacoCoinadress för att bevisa att du äger dem</translation>
     </message>
     <message>
         <location line="+2"/>
-        <source>Verify messages to ensure they were signed with specified Litecoin addresses</source>
+        <source>Verify messages to ensure they were signed with specified Tacocoin addresses</source>
         <translation>Verifiera meddelanden för att vara säker på att de var signerade med den specificerade TacoCoin-adressen</translation>
     </message>
     <message>
@@ -537,12 +537,12 @@ Denna produkten innehåller mjukvara utvecklad av OpenSSL Project för användni
     </message>
     <message>
         <location line="+47"/>
-        <source>Litecoin client</source>
+        <source>Tacocoin client</source>
         <translation>TacoCoin-klient</translation>
     </message>
     <message numerus="yes">
         <location line="+141"/>
-        <source>%n active connection(s) to Litecoin network</source>
+        <source>%n active connection(s) to Tacocoin network</source>
         <translation><numerusform>%n aktiv anslutning till TacoCoin-nätverket</numerusform><numerusform>%n aktiva anslutningar till TacoCoin-nätverket</numerusform></translation>
     </message>
     <message>
@@ -657,7 +657,7 @@ Adress: %4
     <message>
         <location line="-23"/>
         <location line="+23"/>
-        <source>URI can not be parsed! This can be caused by an invalid Litecoin address or malformed URI parameters.</source>
+        <source>URI can not be parsed! This can be caused by an invalid Tacocoin address or malformed URI parameters.</source>
         <translation>URI går inte att tolkas! Detta kan orsakas av en ogiltig TacoCoin-adress eller felaktiga URI parametrar.</translation>
     </message>
     <message>
@@ -672,7 +672,7 @@ Adress: %4
     </message>
     <message>
         <location filename="../bitcoin.cpp" line="+111"/>
-        <source>A fatal error occurred. Litecoin can no longer continue safely and will quit.</source>
+        <source>A fatal error occurred. Tacocoin can no longer continue safely and will quit.</source>
         <translation>Ett allvarligt fel har uppstått. TacoCoin kan inte längre köras säkert och kommer att avslutas.</translation>
     </message>
 </context>
@@ -738,7 +738,7 @@ Adress: %4
     </message>
     <message>
         <location line="-5"/>
-        <source>The entered address &quot;%1&quot; is not a valid Litecoin address.</source>
+        <source>The entered address &quot;%1&quot; is not a valid Tacocoin address.</source>
         <translation>Den angivna adressen &quot;%1&quot; är inte en giltig TacoCoin-adress.</translation>
     </message>
     <message>
@@ -757,7 +757,7 @@ Adress: %4
     <message>
         <location filename="../guiutil.cpp" line="+424"/>
         <location line="+12"/>
-        <source>Litecoin-Qt</source>
+        <source>Tacocoin-Qt</source>
         <translation>TacoCoin-Qt</translation>
     </message>
     <message>
@@ -820,12 +820,12 @@ Adress: %4
     </message>
     <message>
         <location line="+31"/>
-        <source>Automatically start Litecoin after logging in to the system.</source>
+        <source>Automatically start Tacocoin after logging in to the system.</source>
         <translation>Starta TacoCoin automatiskt efter inloggning.</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>&amp;Start Litecoin on system login</source>
+        <source>&amp;Start Tacocoin on system login</source>
         <translation>&amp;Starta TacoCoin vid systemstart</translation>
     </message>
     <message>
@@ -845,7 +845,7 @@ Adress: %4
     </message>
     <message>
         <location line="+6"/>
-        <source>Automatically open the Litecoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
+        <source>Automatically open the Tacocoin client port on the router. This only works when your router supports UPnP and it is enabled.</source>
         <translation>Öppna automatiskt TacoCoin-klientens port på routern. Detta fungerar endast om din router har UPnP aktiverat.</translation>
     </message>
     <message>
@@ -855,7 +855,7 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Connect to the Litecoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
+        <source>Connect to the Tacocoin network through a SOCKS proxy (e.g. when connecting through Tor).</source>
         <translation>Anslut till TacoCoin-nätverket genom en SOCKS-proxy (t.ex. när du ansluter genom Tor).</translation>
     </message>
     <message>
@@ -930,7 +930,7 @@ Adress: %4
     </message>
     <message>
         <location line="+13"/>
-        <source>The user interface language can be set here. This setting will take effect after restarting Litecoin.</source>
+        <source>The user interface language can be set here. This setting will take effect after restarting Tacocoin.</source>
         <translation>Användargränssnittets språk kan ställas in här. Denna inställning träder i kraft efter en omstart av TacoCoin.</translation>
     </message>
     <message>
@@ -945,7 +945,7 @@ Adress: %4
     </message>
     <message>
         <location line="+9"/>
-        <source>Whether to show Litecoin addresses in the transaction list or not.</source>
+        <source>Whether to show Tacocoin addresses in the transaction list or not.</source>
         <translation>Anger om TacoCoin-adresser skall visas i transaktionslistan.</translation>
     </message>
     <message>
@@ -997,7 +997,7 @@ Adress: %4
     <message>
         <location line="-9"/>
         <location line="+9"/>
-        <source>This setting will take effect after restarting Litecoin.</source>
+        <source>This setting will take effect after restarting Tacocoin.</source>
         <translation>Denna inställning träder i kraft efter en omstart av TacoCoin.</translation>
     </message>
     <message>
@@ -1016,7 +1016,7 @@ Adress: %4
     <message>
         <location line="+50"/>
         <location line="+166"/>
-        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Litecoin network after a connection is established, but this process has not completed yet.</source>
+        <source>The displayed information may be out of date. Your wallet automatically synchronizes with the Tacocoin network after a connection is established, but this process has not completed yet.</source>
         <translation>Den visade informationen kan vara inaktuell. Plånboken synkroniseras automatiskt med TacoCoin-nätverket efter att anslutningen är upprättad, men denna process har inte slutförts ännu.</translation>
     </message>
     <message>
@@ -1220,7 +1220,7 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Show the Litecoin-Qt help message to get a list with possible Litecoin command-line options.</source>
+        <source>Show the Tacocoin-Qt help message to get a list with possible Tacocoin command-line options.</source>
         <translation>Visa TacoCoin-Qt hjälpmeddelande för att få en lista med möjliga TacoCoin kommandoradsalternativ.</translation>
     </message>
     <message>
@@ -1240,12 +1240,12 @@ Adress: %4
     </message>
     <message>
         <location line="-104"/>
-        <source>Litecoin - Debug window</source>
+        <source>Tacocoin - Debug window</source>
         <translation>TacoCoin - Debug fönster</translation>
     </message>
     <message>
         <location line="+25"/>
-        <source>Litecoin Core</source>
+        <source>Tacocoin Core</source>
         <translation>TacoCoin Kärna</translation>
     </message>
     <message>
@@ -1255,7 +1255,7 @@ Adress: %4
     </message>
     <message>
         <location line="+7"/>
-        <source>Open the Litecoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
+        <source>Open the Tacocoin debug log file from the current data directory. This can take a few seconds for large log files.</source>
         <translation>Öppna TacoCoin debug-loggfilen som finns i datakatalogen. Detta kan ta några sekunder för stora loggfiler.</translation>
     </message>
     <message>
@@ -1265,7 +1265,7 @@ Adress: %4
     </message>
     <message>
         <location filename="../rpcconsole.cpp" line="-30"/>
-        <source>Welcome to the Litecoin RPC console.</source>
+        <source>Welcome to the Tacocoin RPC console.</source>
         <translation>Välkommen till TacoCoin RPC-konsollen.</translation>
     </message>
     <message>
@@ -1449,7 +1449,7 @@ Adress: %4
     </message>
     <message>
         <location filename="../sendcoinsentry.cpp" line="+1"/>
-        <source>Enter a Litecoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Tacocoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation>Ange en TacoCoin-adress (t.ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
 </context>
@@ -1514,7 +1514,7 @@ Adress: %4
     </message>
     <message>
         <location line="+21"/>
-        <source>Sign the message to prove you own this Litecoin address</source>
+        <source>Sign the message to prove you own this Tacocoin address</source>
         <translation>Signera meddelandet för att bevisa att du äger denna adress</translation>
     </message>
     <message>
@@ -1550,7 +1550,7 @@ Adress: %4
     </message>
     <message>
         <location line="+40"/>
-        <source>Verify the message to ensure it was signed with the specified Litecoin address</source>
+        <source>Verify the message to ensure it was signed with the specified Tacocoin address</source>
         <translation>Verifiera meddelandet för att vara säker på att den var signerad med den angivna TacoCoin-adressen</translation>
     </message>
     <message>
@@ -1566,7 +1566,7 @@ Adress: %4
     <message>
         <location filename="../signverifymessagedialog.cpp" line="+27"/>
         <location line="+3"/>
-        <source>Enter a Litecoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
+        <source>Enter a Tacocoin address (e.g. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</source>
         <translation>Ange en TacoCoin-adress (t.ex. Ler4HNAEfwYhBmGXcFP2Po1NpRUEiK8km2)</translation>
     </message>
     <message>
@@ -1576,7 +1576,7 @@ Adress: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Enter Litecoin signature</source>
+        <source>Enter Tacocoin signature</source>
         <translation>Ange TacoCoin-signatur</translation>
     </message>
     <message>
@@ -1650,7 +1650,7 @@ Adress: %4
     <name>SplashScreen</name>
     <message>
         <location filename="../splashscreen.cpp" line="+22"/>
-        <source>The Litecoin developers</source>
+        <source>The Tacocoin developers</source>
         <translation>TacoCoin-utvecklarna</translation>
     </message>
     <message>
@@ -2188,7 +2188,7 @@ Adress: %4
     <name>bitcoin-core</name>
     <message>
         <location filename="../bitcoinstrings.cpp" line="+94"/>
-        <source>Litecoin version</source>
+        <source>Tacocoin version</source>
         <translation>TacoCoin version</translation>
     </message>
     <message>
@@ -2307,7 +2307,7 @@ rpcpassword=%s
 The username and password MUST NOT be the same.
 If the file does not exist, create it with owner-readable-only file permissions.
 It is also recommended to set alertnotify so you are notified of problems;
-for example: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo.com
+for example: alertnotify=echo %%s | mail -s &quot;Tacocoin Alert&quot; admin@foo.com
 </source>
         <translation>%s, du behöver sätta ett rpclösensord i konfigurationsfilen:
 %s
@@ -2318,7 +2318,7 @@ rpcpassword=%s
 Användarnamnet och lösenordet FÅR INTE bara detsamma.
 Om filen inte existerar, skapa den med enbart ägarläsbara filrättigheter.
 Det är också rekommenderat att sätta alertnotify så du meddelas om problem;
-till exempel: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@foo.com
+till exempel: alertnotify=echo %%s | mail -s &quot;Tacocoin Alert&quot; admin@foo.com
 </translation>
     </message>
     <message>
@@ -2333,7 +2333,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Cannot obtain a lock on data directory %s. Litecoin is probably already running.</source>
+        <source>Cannot obtain a lock on data directory %s. Tacocoin is probably already running.</source>
         <translation>Kan inte låsa data-mappen %s. TacoCoin körs förmodligen redan.</translation>
     </message>
     <message>
@@ -2378,7 +2378,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+3"/>
-        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Litecoin will not work properly.</source>
+        <source>Warning: Please check that your computer&apos;s date and time are correct! If your clock is wrong Tacocoin will not work properly.</source>
         <translation>Varning: Vänligen kolla så att din dators datum och tid är korrekt! Om din klocka går fel kommer TacoCoin inte fungera korrekt.</translation>
     </message>
     <message>
@@ -2628,7 +2628,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+5"/>
-        <source>SSL options: (see the Litecoin Wiki for SSL setup instructions)</source>
+        <source>SSL options: (see the Tacocoin Wiki for SSL setup instructions)</source>
         <translation>SSL-inställningar: (se TacoCoin-wikin för SSL-setup instruktioner)</translation>
     </message>
     <message>
@@ -2679,7 +2679,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@fo
     <message>
         <location line="+4"/>
         <source>Transaction amount too small</source>
-        <translation>Transaktions belopp för liten</translation>
+        <translation>Transaktions belopp för tacon</translation>
     </message>
     <message>
         <location line="+1"/>
@@ -2818,12 +2818,12 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="+1"/>
-        <source>Error loading wallet.dat: Wallet requires newer version of Litecoin</source>
+        <source>Error loading wallet.dat: Wallet requires newer version of Tacocoin</source>
         <translation>Fel vid inläsningen av wallet.dat: Plånboken kräver en senare version av TacoCoin</translation>
     </message>
     <message>
         <location line="+93"/>
-        <source>Wallet needed to be rewritten: restart Litecoin to complete</source>
+        <source>Wallet needed to be rewritten: restart Tacocoin to complete</source>
         <translation>Plånboken behöver skrivas om: Starta om TacoCoin för att färdigställa</translation>
     </message>
     <message>
@@ -2883,7 +2883,7 @@ till exempel: alertnotify=echo %%s | mail -s &quot;Litecoin Alert&quot; admin@fo
     </message>
     <message>
         <location line="-25"/>
-        <source>Unable to bind to %s on this computer. Litecoin is probably already running.</source>
+        <source>Unable to bind to %s on this computer. Tacocoin is probably already running.</source>
         <translation>Det går inte att binda till %s på den här datorn. TacoCoin är förmodligen redan igång.</translation>
     </message>
     <message>
