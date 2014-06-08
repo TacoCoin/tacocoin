@@ -27,7 +27,7 @@ Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.
 Notes
 -----
 
-See `doc/readme-qt.rst` for instructions on building Litecoin-Qt, the
+See `doc/readme-qt.rst` for instructions on building Tacocoin-Qt, the
 graphical user interface.
 
 Tested on OS X 10.5 through 10.8 on Intel processors only. PPC is not
@@ -135,7 +135,7 @@ Rerunning "openssl version" should now return the correct version.
 Creating a release build
 ------------------------
 
-A tacocoind binary is not included in the Litecoin-Qt.app bundle. You can ignore
+A tacocoind binary is not included in the Tacocoin-Qt.app bundle. You can ignore
 this section if you are building `tacocoind` for your own use.
 
 If you are building `litecond` for others, your build machine should be set up
@@ -157,10 +157,10 @@ As of December 2012, the `boost` port does not obey `macosx_deployment_target`.
 Download `http://gavinandresen-bitcoin.s3.amazonaws.com/boost_macports_fix.zip`
 for a fix. Some ports also seem to obey either `build_arch` or
 `macosx_deployment_target`, but not both at the same time. For example, building
-on an OS X 10.6 64-bit machine fails. Official release builds of Litecoin-Qt are
+on an OS X 10.6 64-bit machine fails. Official release builds of Tacocoin-Qt are
 compiled on an OS X 10.6 32-bit machine to workaround that problem.
 
-Once dependencies are compiled, creating `Litecoin-Qt.app` is easy:
+Once dependencies are compiled, creating `Tacocoin-Qt.app` is easy:
 
     make -f Makefile.osx RELEASE=1
 
