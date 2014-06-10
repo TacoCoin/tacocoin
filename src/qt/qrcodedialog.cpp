@@ -95,7 +95,7 @@ QString QRCodeDialog::getURI()
         if (ui->lnReqAmount->validate())
         {
             // even if we allow a non BTC unit input in lnReqAmount, we generate the URI with BTC as unit (as defined in BIP21)
-            ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::BTC, ui->lnReqAmount->value()));
+            ret += QString("?amount=%1").arg(BitcoinUnits::format(BitcoinUnits::MTCO, ui->lnReqAmount->value()));
             paramCount++;
         }
         else
