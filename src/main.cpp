@@ -1990,7 +1990,7 @@ int GetAuxPowStartBlock()
     if (fTestNet)
         return 0; // Test network is only running merged capable clients
     else
-        return INT_MAX; // never
+        return 100000; // 100k
 }
 
 int GetOurChainID()
