@@ -12,9 +12,9 @@ To Build
 ---------------------
 
 	cd src/
-	make -f makefile.unix		# Headless tacocoin
+	make -f makefile.unix		# Headless Peercoin
 
-See readme-qt.rst for instructions on building Tacocoin-Qt, the graphical user interface.
+See readme-qt.rst for instructions on building Peercoin-Qt, the graphical user interface.
 
 Dependencies
 ---------------------
@@ -113,7 +113,7 @@ If you need to build Boost yourself:
 
 Security
 --------
-To help make your tacocoin installation more secure by making certain attacks impossible to
+To help make your peercoin installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, you can take the following measures:
 
 * Position Independent Executable
@@ -131,7 +131,7 @@ exploit even if a vulnerability is found, you can take the following measures:
 
     To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
-    	scanelf -e ./tacocoin
+    	scanelf -e ./peercoin
 
     The output should contain:
      TYPE
@@ -139,13 +139,13 @@ exploit even if a vulnerability is found, you can take the following measures:
 
 * Non-executable Stack
     If the stack is executable then trivial stack based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, bitcoin should be built with a non-executable stack
+    vulnerable buffers are found. By default, peercoin should be built with a non-executable stack
     but if one of the libraries it uses asks for an executable stack or someone makes a mistake
     and uses a compiler extension which requires an executable stack, it will silently build an
     executable without the non-executable stack protection.
 
     To verify that the stack is non-executable after compiling use:
-    `scanelf -e ./tacocoin`
+    `scanelf -e ./peercoin`
 
     the output should contain:
 	STK/REL/PTL
