@@ -12,7 +12,7 @@ To Build
 ---------------------
 
 	cd src/
-	make -f makefile.unix		# Headless tacocoin
+	make -f makefile.unix		# Headless Tacocoin
 
 See readme-qt.rst for instructions on building Tacocoin-Qt, the graphical user interface.
 
