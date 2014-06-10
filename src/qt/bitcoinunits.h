@@ -1,79 +1,181 @@
-// Copyright (c) 2011-2013 The Bitcoin developers
-// Distributed under the MIT/X11 software license, see the accompanying
-// file COPYING or http://www.opensource.org/licenses/mit-license.php.
+#include "bitcoinunits.h"
 
-#ifndef BITCOINUNITS_H
-#define BITCOINUNITS_H
+#include <QStringList>
 
-#include <QAbstractListModel>
-#include <QString>
-#include <QLocale>
-
-/** Bitcoin unit definitions. Encapsulates parsing and formatting
-   and serves as list model for drop-down selection boxes.
-*/
-class BitcoinUnits: public QAbstractListModel
+BitcoinUnits::BitcoinUnits(QObject *parent):
+        QAbstractListModel(parent),
+        unitlist(availableUnits())
 {
-    Q_OBJECT
+}
 
-public:
-    explicit BitcoinUnits(QObject *parent);
-
-    /** Bitcoin units.
-      @note Source: https://en.bitcoin.it/wiki/Units . Please add only sensible ones
-     */
-    enum Unit   //Note: preserve positions in order to preserve existing settings
-    {
-        TCO,
-        //formerly mTCO
-        //formerly uTCO
-        MTCO = 3,
-        kTCO = 4,
-        Tortilla = 5
-    };
-
-    //! @name Static API
-    //! Unit conversion and formatting
-    ///@{
-
-    //! Get list of units, for drop-down box
-    static QList<Unit> availableUnits();
-    //! Is unit ID valid?
-    static bool valid(int unit);
-    //! Short name
-    static QString name(int unit);
-    //! Longer description
-    static QString description(int unit);
-    //! Number of Satoshis (1e-8) per unit
-    static qint64 factor(int unit);
-    //! Max amount per unit
-    static qint64 maxAmount(int unit);
-    //! Number of amount digits (to represent max number of coins)
-    static int amountDigits(int unit);
-    //! Number of decimals left
-    static int decimals(int unit);
-    //! Format as string
-    static QString format(int unit, qint64 amount, bool plussign=false, bool trim=true, const QLocale &locale=QLocale());
-    //! Format as string (with unit)
-    static QString formatWithUnit(int unit, qint64 amount, bool plussign=false, bool trim=true, const QLocale &locale=QLocale());
-    //! Parse string to coin amount
-    static bool parse(int unit, const QString &value, qint64 *val_out, const QLocale &locale=QLocale());
-    ///@}
-
-    //! @name AbstractListModel implementation
-    //! List model for unit drop-down selection box.
-    ///@{
-    enum RoleIndex {
-        /** Unit identifier */
-        UnitRole = Qt::UserRole
-    };
-    int rowCount(const QModelIndex &parent) const;
-    QVariant data(const QModelIndex &index, int role) const;
-    ///@}
-
-private:
+QList<BitcoinUnits::Unit> BitcoinUnits::availableUnits()
+{
     QList<BitcoinUnits::Unit> unitlist;
-};
-typedef BitcoinUnits::Unit BitcoinUnit;
+    unitlist.append(TCO);
+    unitlist.append(mTCO);
+    unitlist.append(uTCO);
+    return unitlist;
+}
 
-#endif // BITCOINUNITS_H
+bool BitcoinUnits::valid(int unit)
+{
+    switch(unit)
+    {
+    case TCO:
+    case mTCO:
+    case uTCO:
+        return true;
+    default:
+        return false;
+    }
+}
+
+QString BitcoinUnits::name(int unit)
+{
+    switch(unit)
+    {
+    case TCO: return QString("TCO");
+    case mTCO: return QString("mTCO");
+    case uTCO: return QString::fromUtf8("μTCO");
+    default: return QString("???");
+    }
+}
+
+QString BitcoinUnits::description(int unit)
+{
+    switch(unit)
+    {
+    case TCO: return QString("TacoCoins");
+    case mTCO: return QString("Milli-TacoCoins (1 / 1,000)");
+    case uTCO: return QString("Micro-TacoCoins (1 / 1,000,000)");
+    default: return QString("???");
+    }
+}
+
+qint64 BitcoinUnits::factor(int unit)
+{
+    switch(unit)
+    {
+    case TCO:  return 100000000;
+    case mTCO: return 100000;
+    case uTCO: return 100;
+    default:   return 100000000;
+    }
+}
+
+int BitcoinUnits::amountDigits(int unit)
+{
+    switch(unit)
+    {
+    case TCO: return 8; // 21,000,000 (# digits, without commas)
+    case mTCO: return 11; // 21,000,000,000
+    case uTCO: return 14; // 21,000,000,000,000
+    default: return 0;
+    }
+}
+
+int BitcoinUnits::decimals(int unit)
+{
+    switch(unit)
+    {
+    case TCO: return 8;
+    case mTCO: return 5;
+    case uTCO: return 2;
+    default: return 0;
+    }
+}
+
+QString BitcoinUnits::format(int unit, qint64 n, bool fPlus)
+{
+    // Note: not using straight sprintf here because we do NOT want
+    // localized number formatting.
+    if(!valid(unit))
+        return QString(); // Refuse to format invalid unit
+    qint64 coin = factor(unit);
+    int num_decimals = decimals(unit);
+    qint64 n_abs = (n > 0 ? n : -n);
+    qint64 quotient = n_abs / coin;
+    qint64 remainder = n_abs % coin;
+    QString quotient_str = QString::number(quotient);
+    QString remainder_str = QString::number(remainder).rightJustified(num_decimals, '0');
+
+    // Right-trim excess zeros after the decimal point
+    int nTrim = 0;
+    for (int i = remainder_str.size()-1; i>=2 && (remainder_str.at(i) == '0'); --i)
+        ++nTrim;
+    remainder_str.chop(nTrim);
+
+    if (n < 0)
+        quotient_str.insert(0, '-');
+    else if (fPlus && n > 0)
+        quotient_str.insert(0, '+');
+    return quotient_str + QString(".") + remainder_str;
+}
+
+QString BitcoinUnits::formatWithUnit(int unit, qint64 amount, bool plussign)
+{
+    return format(unit, amount, plussign) + QString(" ") + name(unit);
+}
+
+bool BitcoinUnits::parse(int unit, const QString &value, qint64 *val_out)
+{
+    if(!valid(unit) || value.isEmpty())
+        return false; // Refuse to parse invalid unit or empty string
+    int num_decimals = decimals(unit);
+    QStringList parts = value.split(".");
+
+    if(parts.size() > 2)
+    {
+        return false; // More than one dot
+    }
+    QString whole = parts[0];
+    QString decimals;
+
+    if(parts.size() > 1)
+    {
+        decimals = parts[1];
+    }
+    if(decimals.size() > num_decimals)
+    {
+        return false; // Exceeds max precision
+    }
+    bool ok = false;
+    QString str = whole + decimals.leftJustified(num_decimals, '0');
+
+    if(str.size() > 18)
+    {
+        return false; // Longer numbers will exceed 63 bits
+    }
+    qint64 retvalue = str.toLongLong(&ok);
+    if(val_out)
+    {
+        *val_out = retvalue;
+    }
+    return ok;
+}
+
+int BitcoinUnits::rowCount(const QModelIndex &parent) const
+{
+    Q_UNUSED(parent);
+    return unitlist.size();
+}
+
+QVariant BitcoinUnits::data(const QModelIndex &index, int role) const
+{
+    int row = index.row();
+    if(row >= 0 && row < unitlist.size())
+    {
+        Unit unit = unitlist.at(row);
+        switch(role)
+        {
+        case Qt::EditRole:
+        case Qt::DisplayRole:
+            return QVariant(name(unit));
+        case Qt::ToolTipRole:
+            return QVariant(description(unit));
+        case UnitRole:
+            return QVariant(static_cast<int>(unit));
+        }
+    }
+    return QVariant();
+}
