@@ -77,10 +77,10 @@ qint64 BitcoinUnits::maxAmount(int unit)
 {
     switch(unit)
     {
-    case MTCO: return Q_INT64_C(50);
-    case kTCO: return Q_INT64_C(50000);
-    case TCO:  return Q_INT64_C(50000000);    //less than the coin supply until the year 2170
-    case Tortilla: return Q_INT64_C(5000000000000000); // Slightly under max value for int64
+    case MTCO: return Q_INT64_C(49);
+    case kTCO: return Q_INT64_C(49000);
+    case TCO:  return Q_INT64_C(49000000);    //less than the coin supply until the year 2170
+    case Tortilla: return Q_INT64_C(4900000000000000); // Slightly under max value for int64
     default:   return 0;
     }
 }
