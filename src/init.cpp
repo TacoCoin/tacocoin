@@ -182,8 +182,8 @@ bool AppInit(int argc, char* argv[])
             std::string strUsage = _("TacoCoin version") + " " + FormatFullVersion() + "\n\n" +
                 _("Usage:") + "\n" +
                   "  tacocoind [options]                     " + "\n" +
-                  "  tacocoind [options] <command> [params]  " + _("Send command to -server or TacoCoind") + "\n" +
-                  "  tacocoind [options] help                " + _("List commands") + "\n" +
+                  "  tacocoind [options] <command> [params]  " + _("Send command to -server or tacocoind") + "\n" +
+                  "  tacocoind [options] help                " + _("List commands") + "\n" 
                   "  tacocoind [options] help <command>      " + _("Get help for a command") + "\n";
 
             strUsage += "\n" + HelpMessage();
