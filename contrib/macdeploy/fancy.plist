@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
+<plist version="0.9">
 <dict>
 	<key>window_bounds</key>
 	<array>
@@ -22,7 +22,7 @@
 			<integer>370</integer>
 			<integer>156</integer>
 		</array>
-		<key>Litecoin-Qt.app</key>
+		<key>Tacocoin-Qt.app</key>
 		<array>
 			<integer>128</integer>
 			<integer>156</integer>
