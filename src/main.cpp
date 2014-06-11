@@ -4177,7 +4177,7 @@ bool SendMessages(CNode* pto, bool fSendTrickle)
 
 //////////////////////////////////////////////////////////////////////////////
 //
-// LitecoinMiner
+// TacocoinMiner
 //
 
 int static FormatHashBlocks(void* pbuffer, unsigned int len)
