@@ -2,7 +2,7 @@
 
 TacoCoin is an open source peer-to-peer crytocurrency.
 
-![TacoCoin](http://tacocoin.net/TacocoinLogo.jpg)
+![TacoCoin](http://i.imgur.com/joSjvuE.png)
 
 #What is TacoCoin?  
 
