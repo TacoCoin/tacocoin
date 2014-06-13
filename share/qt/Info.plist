@@ -7,24 +7,24 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
-	<string>$VERSION, Copyright © 2009-$YEAR The Bitcoin developers</string>
+	<string>0.9.0.0, Copyright © 2009-2014 The Bitcoin developers</string>
 	<key>CFBundleShortVersionString</key>
-	<string>$VERSION</string>
+	<string>0.9.0.0</string>
 	<key>CFBundleVersion</key>
-	<string>$VERSION</string>
+	<string>0.9.0.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleExecutable</key>
-	<string>Litecoin-Qt</string>
+	<string>Tacocoin-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.tacocoin.Litecoin-Qt</string>
+	<string>org.tacocoin.Tacocoin-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>org.tacocoin.LitecoinPayment</string>
+            <string>org.tacocoin.TacocoinPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
               <string>tacocoin</string>
