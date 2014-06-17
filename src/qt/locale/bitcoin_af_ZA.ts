@@ -29,7 +29,7 @@ This product includes software developed by the OpenSSL Project for use in the O
     </message>
     <message>
         <location line="+0"/>
-        <source>The Tacocoin developers</source>
+        <source>The Tacocoin Developers</source>
         <translation type="unfinished"/>
     </message>
 </context>
