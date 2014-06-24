@@ -13,13 +13,13 @@ License
 -------
 
 Copyright (c) 2009-2012 Bitcoin Developers
-Copyright (c) 20014 Tacocoin Developers
+Copyright (c) 2014 Tacocoin Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
 
 This product includes software developed by the OpenSSL Project for use in
-the OpenSSL Toolkit (http://www.openssl.org/).
+the OpenSSL Toolkit (https://www.openssl.org/).
 
 This product includes cryptographic software written by
 Eric Young (eay@cryptsoft.com) and UPnP software written by Thomas Bernard.
@@ -30,11 +30,11 @@ Notes
 See `doc/readme-qt.rst` for instructions on building Tacocoin-Qt, the
 graphical user interface.
 
-Tested on OS X 10.5 through 10.8 on Intel processors only. PPC is not
+Tested on OS X 10.5 through 10.10 on Intel processors only. PPC is not
 supported because it is big-endian.
 
 All of the commands should be executed in a Terminal application. The
-built-in one is located in `/Applications/Utilities`.
+default one is located in `/Applications/Utilities`.
 
 Preparation
 -----------
@@ -53,11 +53,9 @@ not, it's the path of least resistance to install [Github for Mac](https://mac.g
 [Git for OS X](https://code.google.com/p/git-osx-installer/). It is also
 available via Homebrew or MacPorts.
 
-You will also need to install [Homebrew](http://mxcl.github.io/homebrew/)
+You will also need to install [Homebrew](http://brew.sh/)
 or [MacPorts](https://www.macports.org/) in order to install library
-dependencies. It's largely a religious decision which to choose, but, as of
-December 2012, MacPorts is a little easier because you can just install the
-dependencies immediately - no other work required. If you're unsure, read
+dependencies. It's largely a religious decision which to choose. If you're unsure, read
 the instructions through first in order to assess what you want to do.
 Homebrew is a little more popular among those newer to OS X.
 
@@ -96,18 +94,6 @@ Instructions: HomeBrew
 
         brew install boost miniupnpc openssl berkeley-db4
 
-Note: After you have installed the dependencies, you should check that the Brew installed version of OpenSSL is the one available for compilation. You can check this by typing
-
-        openssl version
-
-into Terminal. You should see OpenSSL 1.0.1e 11 Feb 2013.
-
-If not, you can ensure that the Brew OpenSSL is correctly linked by running
-
-        brew link openssl --force
-
-Rerunning "openssl version" should now return the correct version.
-
 ### Building `tacocoind`
 
 1. Clone the github tree to get the source code and go into the directory.
@@ -138,7 +124,7 @@ Creating a release build
 A tacocoind binary is not included in the Tacocoin-Qt.app bundle. You can ignore
 this section if you are building `tacocoind` for your own use.
 
-If you are building `litecond` for others, your build machine should be set up
+If you are building `tacocoind` for others, your build machine should be set up
 as follows for maximum compatibility:
 
 All dependencies should be compiled with these flags:

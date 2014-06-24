@@ -1,3 +1,13 @@
+0.9.0 changes
+=============
+
+- MANDATORY UPDATE
+- A functional testnet
+- Our brand new logo (not in current linux beta)
+- Merged mining with all scrypt coins!
+- Difficulty will now retarget every hour, instead of every 10 hours, which will make finding blocks much more consistent.
+
+
 0.8.6.2 changes
 =============
 
