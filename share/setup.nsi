@@ -1,4 +1,4 @@
-Name Litecoin
+Name Tacocoin
 
 RequestExecutionLevel highest
 SetCompressor /SOLID lzma
@@ -6,7 +6,7 @@ SetCompressor /SOLID lzma
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
 !define VERSION 0.8.6.2
-!define COMPANY "Litecoin project"
+!define COMPANY "Tacocoin"
 !define URL http://www.tacocoin.org/
 
 # MUI Symbol Definitions
