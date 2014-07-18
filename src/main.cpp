@@ -1075,10 +1075,20 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 {
     int64 nSubsidy = 500 * COIN;
 
-    nSubsidy >>= (nHeight / 50000);
+    if(nHeight < 10)
+    {
+        nSubsidy >>= (nHeight / 50000);
+    }
+    else
+    {
+        nSubsidy = 10000 * COIN;
+    }
 
     return nSubsidy + nFees;
 }
+
+
+
 
 static const int64 nTargetTimespan = 36000;
 static const int64 nTargetTimespanNEW = 60 * 60; // Above 100k retarget hourly
