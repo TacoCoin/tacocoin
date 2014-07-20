@@ -1075,9 +1075,14 @@ int64 static GetBlockValue(int nHeight, int64 nFees)
 {
     int64 nSubsidy = 500 * COIN;
 
-    nSubsidy >>= (nHeight / 50000);
-
-    return nSubsidy + nFees;
+    if(nHeight < 300000)
+    {
+        nSubsidy >>= (nHeight / 50000);
+    }
+    else
+    {
+        nSubsidy = 50 * COIN;
+    }
 }
 
 static const int64 nTargetTimespan = 36000;
