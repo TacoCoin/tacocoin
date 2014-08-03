@@ -1,20 +1,20 @@
-.TH BITCOIN-QT "1" "April 2013" "bitcoin-qt 1"
+.TH Tacocoin-QT "1" "July 2014" "tacocoin-qt 1"
 .SH NAME
-bitcoin-qt \- peer-to-peer network based digital currency
+tacocoin-qt \- peer-to-peer network based digital currency
 .SH DESCRIPTION
 .SS "Usage:"
 .IP
-bitcoin\-qt [command\-line options]
+tacocoin\-qt [command\-line options]
 .SH OPTIONS
 .TP
 \-?
 This help message
 .TP
 \fB\-conf=\fR<file>
-Specify configuration file (default: bitcoin.conf)
+Specify configuration file (default: tacocoin.conf)
 .TP
 \fB\-pid=\fR<file>
-Specify pid file (default: bitcoind.pid)
+Specify pid file (default: tacocoind.pid)
 .TP
 \fB\-gen\fR
 Generate coins
@@ -44,7 +44,7 @@ Use proxy to reach tor hidden services (default: same as \fB\-proxy\fR)
 Allow DNS lookups for \fB\-addnode\fR, \fB\-seednode\fR and \fB\-connect\fR
 .TP
 \fB\-port=\fR<port>
-Listen for connections on <port> (default: 9333 or testnet: 19333)
+Listen for connections on <port> (default: 11042 or testnet: 5744)
 .TP
 \fB\-maxconnections=\fR<n>
 Maintain at most <n> connections to peers (default: 125)
@@ -125,7 +125,7 @@ Username for JSON\-RPC connections
 Password for JSON\-RPC connections
 .TP
 \fB\-rpcport=\fR<port>
-Listen for JSON\-RPC connections on <port> (default: 9332 or testnet: 19332)
+Listen for JSON\-RPC connections on <port> (default: 21042 or testnet: 5745)
 .TP
 \fB\-rpcallowip=\fR<ip>
 Allow JSON\-RPC connections from specified IP address
@@ -181,7 +181,7 @@ Set maximum block size in bytes (default: 250000)
 .HP
 \fB\-blockprioritysize=\fR<n> Set maximum size of high\-priority/low\-fee transactions in bytes (default: 27000)
 .PP
-SSL options: (see the Bitcoin Wiki for SSL setup instructions)
+SSL options: (see the Tacocoin Wiki for SSL setup instructions)
 .TP
 \fB\-rpcssl\fR
 Use OpenSSL (https) for JSON\-RPC connections
