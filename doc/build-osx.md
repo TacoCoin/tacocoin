@@ -69,7 +69,7 @@ Instructions: MacPorts
 
 Installing the dependencies using MacPorts is very straightforward.
 
-    sudo port install boost db48@+no_java openssl miniupnpc
+    sudo port install openssl miniupnpc autoconf automake db48 boost miniupnpc pkgconfig protobuf-cpp qt4-mac
 
 ### Building `tacocoind`
 
