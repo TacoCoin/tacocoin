@@ -1,7 +1,7 @@
 TEMPLATE = app
 TARGET = tacocoin-qt
 macx:TARGET = "Tacocoin-Qt"
-VERSION = 0.8.6.2
+VERSION = 0.9.0.0
 INCLUDEPATH += src src/json src/qt
 QT += network
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
