@@ -1,4 +1,6 @@
-Building Tacocoin
+####Building Tacocoin
+
+----
 
 See doc/readme-qt.rst for instructions on building Tacocoin-Qt,
 the intended-for-end-users, nice-graphical-interface, reference
