@@ -2730,7 +2730,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: </source>
+        <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>警告：该软件版本已过时，请升级！</translation>
     </message>
     <message>

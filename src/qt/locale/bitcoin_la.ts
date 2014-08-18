@@ -2716,7 +2716,7 @@ exempli gratia: alertnotify=echo %%s | mail -s &quot;Tacocoin Notificatio&quot; 
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: </source>
+        <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>Monitio: Haec versio obsoleta est, progressio postulata!</translation>
     </message>
     <message>
