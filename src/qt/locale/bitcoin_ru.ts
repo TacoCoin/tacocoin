@@ -2719,7 +2719,7 @@ rpcpassword=%s
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: This version is obsolete, upgrade required!</source>
+        <source>Warning: </source>
         <translation>Внимание: эта версия устарела, требуется обновление!</translation>
     </message>
     <message>

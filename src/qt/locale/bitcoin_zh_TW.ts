@@ -2727,7 +2727,7 @@ alertnotify=echo %%s | mail -s &quot;Tacocoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: This version is obsolete, upgrade required!</source>
+        <source>Warning: </source>
         <translation>警告: 這個版本已經被淘汰掉了, 必須要升級!</translation>
     </message>
     <message>
