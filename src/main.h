@@ -181,7 +181,10 @@ int GetNumBlocksOfPeers();
 bool IsInitialBlockDownload();
 /** Format a string that describes several potential problems detected by the core */
 std::string GetWarnings(std::string strFor);
+/** AuxPoW Chain ID */
 int GetOurChainID();
+/** Determine whether the block version is modulated with auxpow logic */
+bool IsAuxPowVersion(int nVersion);
 /** Retrieve a transaction (from memory pool, or from disk, if possible) */
 bool GetTransaction(const uint256 &hash, CTransaction &tx, uint256 &hashBlock, bool fAllowSlow = false);
 /** Connect/disconnect blocks until pindexNew is the new tip of the active block chain */
