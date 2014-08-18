@@ -2717,7 +2717,7 @@ For eksempel: varselmelding=echo %%s | mail -s &quot;Tacocoin varsel&quot; admin
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: </source>
+        <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>Advarsel: Denne versjonen er foreldet, oppgradering kreves!</translation>
     </message>
     <message>

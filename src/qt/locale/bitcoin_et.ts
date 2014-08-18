@@ -2716,7 +2716,7 @@ nt: alertnotify=echo %%s | email -s &quot;Tacocoin Alert&quot; admin@foo.com
     </message>
     <message>
         <location line="+1"/>
-        <source>Warning: </source>
+        <source>Warning: This version is obsolete, upgrade required!</source>
         <translation>Hoiatus: versioon on aegunud, uuendus on nõutav!</translation>
     </message>
     <message>
