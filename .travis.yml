@@ -11,3 +11,10 @@ before_install:
 branches:
   only:
     - master
+  
+notifications:
+  irc:
+    channels:
+      - "chat.freenode.net#tacocoindev"
+    template:
+      - "%{repository}/%{branch} (%{commit} - %{author}): %{message}"
