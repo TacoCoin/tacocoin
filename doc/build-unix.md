@@ -50,7 +50,7 @@ Licenses of statically linked libraries:
 -  GCC           4.3.3
 -  OpenSSL       1.0.1h
 -  Berkeley DB   4.8.30.NC
--  Boost         1.37
+-  Boost         1.46
 -  miniupnpc     1.6
 
 Dependency Build Instructions: Ubuntu & Debian
