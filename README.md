@@ -20,5 +20,5 @@ TacoCoin was created to revolutionize the way that the world buys tacos
 
 website: http://TacoCoin.net/  
 Reddit: http://www.reddit.com/r/TacoCoin/  
-Twitter: @therealtacocoin
+Twitter: @therealtacocoin  
 Freenode: #TacoCoin  
