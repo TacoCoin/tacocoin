@@ -1,8 +1,8 @@
-Tacocoin 0.9.x
+Tacocoin 0.9.0
 ====================
 
 Copyright (c) 2009-2014 Bitcoin Developers
-Copyright (c) 2011-2014 Tacocoin Developers
+Copyright (c) 2014- Tacocoin Developers
 
 Distributed under the MIT/X11 software license, see the accompanying
 file COPYING or http://www.opensource.org/licenses/mit-license.php.
