@@ -14,11 +14,11 @@ packages:
 reference_datetime: "2011-01-30 00:00:00"
 remotes: []
 files:
-- "openssl-1.0.1h.tar.gz"
+- "openssl-1.0.1p.tar.gz"
 - "db-4.8.30.NC.tar.gz"
 - "miniupnpc-1.6.tar.gz"
-- "zlib-1.2.6.tar.gz"
-- "libpng-1.5.9.tar.gz"
+- "zlib-1.2.8.tar.gz"
+- "libpng-1.6.18.tar.gz"
 - "qrencode-3.2.0.tar.bz2"
 script: |
   #
@@ -30,8 +30,8 @@ script: |
   #
   mkdir -p $INSTALLPREFIX
 
-  tar xzf openssl-1.0.1h.tar.gz
-  cd openssl-1.0.1h
+  tar xzf openssl-1.0.1p.tar.gz
+  cd openssl-1.0.1p
   ./Configure --cross-compile-prefix=$HOST- mingw --openssldir=$INSTALLPREFIX
   make
   make install_sw
@@ -68,16 +68,16 @@ script: |
   install libminiupnpc.a  $INSTALLPREFIX/lib
   cd ..
   #
-  tar xzf zlib-1.2.6.tar.gz
-  cd zlib-1.2.6
+  tar xzf zlib-1.2.8.tar.gz
+  cd zlib-1.2.8
   CROSS_PREFIX=$HOST- ./configure --prefix=$INSTALLPREFIX --static
   make
   make install
   cd ..
   #
-  tar xzf libpng-1.5.9.tar.gz
-  cd libpng-1.5.9
-  CFLAGS="-I$INSTALLPREFIX/include" LDFLAGS="-L$INSTALLPREFIX/lib" ./configure --disable-shared --prefix=$INSTALLPREFIX --host=$HOST
+  tar xzf libpng-1.6.18.tar.gz
+  cd libpng-1.6.18
+  CPPFLAGS="-I$INSTALLPREFIX/include" CFLAGS="-I$INSTALLPREFIX/include" LDFLAGS="-L$INSTALLPREFIX/lib" ./configure --disable-shared --prefix=$INSTALLPREFIX --host=$HOST
   make $MAKEOPTS
   make install
   cd ..
