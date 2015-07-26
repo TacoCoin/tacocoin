@@ -1,12 +1,12 @@
 ---
 name: "tacocoin"
 suites:
-- "lucid"
+- "precise"
 architectures:
 - "i386"
 - "amd64"
 packages: 
-- "libdb4.8++-dev"
+- "libdb5.1++-dev"
 - "qt4-qmake"
 - "libqt4-dev"
 - "libboost-system-dev"
@@ -20,7 +20,7 @@ packages:
 - "libpng12-dev"
 reference_datetime: "2011-01-30 00:00:00"
 remotes:
-- "url": "https://github.com/tacocoin/tacocoin.git"
+- "url": "https://github.com/sjwcoin/tacocoin.git"
   "dir": "tacocoin"
 files:
 - "miniupnpc-1.6.tar.gz"
