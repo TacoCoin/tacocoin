@@ -26,8 +26,9 @@ Once you've got the right hardware and software:
     wget -O miniupnpc-1.6.tar.gz 'http://miniupnp.tuxfamily.org/files/download.php?file=miniupnpc-1.6.tar.gz'
     wget 'http://fukuchi.org/works/qrencode/qrencode-3.2.0.tar.bz2'
     # Inputs for Win32: (Linux has packages for these)
-    wget 'https://downloads.sourceforge.net/project/boost/boost/1.50.0/boost_1_50_0.tar.bz2'
-    wget 'https://www.openssl.org/source/openssl-1.0.1h.tar.gz'
+    wget 'https://downloads.sourceforge.net/project/boost/boost/1.55.0/boost_1_55_0.tar.bz2'
+	  wget --no-check-certificate 'https://svn.boost.org/trac/boost/raw-attachment/ticket/7262/boost-mingw.patch' -O boost-mingw-gas-cross-compile-2013-03-03.patch
+    wget 'https://www.openssl.org/source/openssl-1.0.1p.tar.gz'
     wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
     wget 'https://downloads.sourceforge.net/project/libpng/zlib/1.2.6/zlib-1.2.6.tar.gz'
     wget 'https://downloads.sourceforge.net/project/libpng/libpng15/older-releases/1.5.9/libpng-1.5.9.tar.gz'
@@ -35,10 +36,10 @@ Once you've got the right hardware and software:
     cd ../..
 
     cd gitian-builder
-    bin/make-base-vm --arch i386
-    bin/make-base-vm --arch amd64
+    bin/make-base-vm --lxc --arch i386 --suite precise
+    bin/make-base-vm --lxc --arch amd64 --suite precise
     cd ..
-
+----------------------------- still fixing below ----------------------------
     # Build Linux release:
     cd tacocoin
     git pull
