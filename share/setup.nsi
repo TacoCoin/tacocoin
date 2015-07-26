@@ -5,7 +5,7 @@ SetCompressor /SOLID lzma
 
 # General Symbol Definitions
 !define REGKEY "SOFTWARE\$(^Name)"
-!define VERSION 0.9.0.0
+!define VERSION 0.9.0.1
 !define COMPANY "Tacocoin"
 !define URL http://www.tacocoin.net/
 
