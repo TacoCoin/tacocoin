@@ -1193,10 +1193,10 @@ void MapPort(bool)
 // The second name should resolve to a list of seed addresses.
 static const char *strMainNetDNSSeed[][2] = {
     {"107.155.116.78", "107.155.116.78"}, //sjwseed
-	{"63.142.250.138", "63.142.250.138"}, //sjwstable
-	{"96.126.96.173", "96.126.96.173"},   //litecoinpool
-	{"82.200.205.30", "82.200.205.30"},   //notsurebutserver
-	{"104.236.249.45", "104.236.249.45"}  //newexplorer
+    {"63.142.250.138", "63.142.250.138"}, //sjwstable
+    {"96.126.96.173", "96.126.96.173"},   //litecoinpool
+    {"82.200.205.30", "82.200.205.30"},   //notsurebutserver
+    {"104.236.249.45", "104.236.249.45"}, //newexplorer
     {NULL, NULL}
 };
 
