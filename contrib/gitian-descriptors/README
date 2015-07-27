@@ -26,18 +26,20 @@ Once you've got the right hardware and software:
     wget -O miniupnpc-1.6.tar.gz 'http://miniupnp.tuxfamily.org/files/download.php?file=miniupnpc-1.6.tar.gz'
     wget 'http://fukuchi.org/works/qrencode/qrencode-3.2.0.tar.bz2'
     # Inputs for Win32: (Linux has packages for these)
-    wget 'https://downloads.sourceforge.net/project/boost/boost/1.50.0/boost_1_50_0.tar.bz2'
-    wget 'https://www.openssl.org/source/openssl-1.0.1h.tar.gz'
-    wget 'http://download.oracle.com/berkeley-db/db-4.8.30.NC.tar.gz'
+    wget 'https://downloads.sourceforge.net/project/boost/boost/1.55.0/boost_1_55_0.tar.bz2'
+    wget --no-check-certificate 'https://svn.boost.org/trac/boost/raw-attachment/ticket/7262/boost-mingw.patch' -O boost-mingw-gas-cross-compile-2013-03-03.patch
+    wget 'https://www.openssl.org/source/openssl-1.0.1p.tar.gz'
+    wget 'http://download.oracle.com/berkeley-db/db-5.1.29.NC.tar.gz'
     wget 'https://downloads.sourceforge.net/project/libpng/zlib/1.2.6/zlib-1.2.6.tar.gz'
     wget 'https://downloads.sourceforge.net/project/libpng/libpng15/older-releases/1.5.9/libpng-1.5.9.tar.gz'
     wget 'http://download.qt-project.org/archive/qt/4.8/4.8.3/qt-everywhere-opensource-src-4.8.3.tar.gz'
     cd ../..
 
     cd gitian-builder
-    bin/make-base-vm --arch i386
-    bin/make-base-vm --arch amd64
+    bin/make-base-vm --lxc --arch i386 --suite precise
+    bin/make-base-vm --lxc --arch amd64 --suite precise
     cd ..
+    mkdir -p ~/made_tacos/{linux,windows}
 
     # Build Linux release:
     cd tacocoin
@@ -45,16 +47,18 @@ Once you've got the right hardware and software:
     cd ../gitian-builder
     git pull
     ./bin/gbuild --commit tacocoin=HEAD ../tacocoin/contrib/gitian-descriptors/gitian.yml
-
+    mv build/out/* ~/made_tacos/linux/
+	
     # Build Win32 dependencies: (only needs to be done once, or when dependency versions change)
     ./bin/gbuild --commit tacocoin=HEAD ../tacocoin/contrib/gitian-descriptors/boost-win32.yml
+    mv build/out/boost-win32-1.55.0-gitian-r6.zip inputs/
     ./bin/gbuild --commit tacocoin=HEAD ../tacocoin/contrib/gitian-descriptors/deps-win32.yml
+    mv build/out/bitcoin-deps-win32-gitian-r9.zip inputs/
     ./bin/gbuild --commit tacocoin=HEAD ../tacocoin/contrib/gitian-descriptors/qt-win32.yml
-
+    mv build/out/qt-win32-4.8.3-gitian-r4.zip inputs/
     # Build Win32 release:
     ./bin/gbuild --commit tacocoin=HEAD ../tacocoin/contrib/gitian-descriptors/gitian-win32.yml
-
----------------------
+    mv build/out/tacocoin-qt.exe ~/made_tacos/windows/
 
 gitian-builder now also supports building using LXC. See
   https://help.ubuntu.com/12.04/serverguide/lxc.html

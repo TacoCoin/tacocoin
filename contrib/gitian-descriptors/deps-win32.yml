@@ -14,8 +14,8 @@ packages:
 reference_datetime: "2011-01-30 00:00:00"
 remotes: []
 files:
-- "openssl-1.0.1h.tar.gz"
-- "db-4.8.30.NC.tar.gz"
+- "openssl-1.0.1p.tar.gz"
+- "db-5.1.29.NC.tar.gz"
 - "miniupnpc-1.6.tar.gz"
 - "zlib-1.2.6.tar.gz"
 - "libpng-1.5.9.tar.gz"
@@ -30,15 +30,16 @@ script: |
   #
   mkdir -p $INSTALLPREFIX
 
-  tar xzf openssl-1.0.1h.tar.gz
-  cd openssl-1.0.1h
+  tar xzf openssl-1.0.1p.tar.gz
+  cd openssl-1.0.1p
   ./Configure --cross-compile-prefix=$HOST- mingw --openssldir=$INSTALLPREFIX
   make
   make install_sw
   cd ..
   #
-  tar xzf db-4.8.30.NC.tar.gz
-  cd db-4.8.30.NC/build_unix
+  tar xzf db-5.1.29.NC.tar.gz
+  sed -i 's/WinIoCtl\.h/winioctl\.h/g' db-5.1.29.NC/src/dbinc/win_db.h
+  cd db-5.1.29.NC/build_unix
   ../dist/configure --prefix=$INSTALLPREFIX --enable-mingw --enable-cxx --host=$HOST --disable-shared
   make $MAKEOPTS library_build
   make install_lib install_include
