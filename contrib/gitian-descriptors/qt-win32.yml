@@ -41,7 +41,7 @@ script: |
   #
   # Need mingw-compiled openssl from sjwcoin-deps:
   cd $DEPSDIR
-  unzip $INDIR/bitcoin-deps-win-gitian-r9.zip
+  unzip $INDIR/bitcoin-deps-win32-gitian-r9.zip
   #
   cd $BUILDDIR
   #
