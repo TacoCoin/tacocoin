@@ -3,7 +3,7 @@ name: "tacocoin"
 suites:
 - "precise"
 architectures:
-- "i386"
+- "amd64"
 packages:
 - "mingw-w64"
 - "g++-mingw-w64"
