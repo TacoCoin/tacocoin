@@ -46,15 +46,16 @@ script: |
   $HOST-strip release/tacocoin-qt.exe
   cp release/tacocoin-qt.exe $OUTDIR/
   #
-  cd src
-  export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
-  export FAKETIME=$REFERENCE_DATETIME
-  export TZ=UTC
-  make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$STAGING tacocoind.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=tacocoin" USE_SSE2=1
-  $HOST-strip tacocoind.exe
-  mkdir $OUTDIR/daemon
-  cp tacocoind.exe $OUTDIR/daemon
-  cd ..
+  #fuck the daemon, just the qt wallet..
+  #cd src
+  #export LD_PRELOAD=/usr/lib/faketime/libfaketime.so.1
+  #export FAKETIME=$REFERENCE_DATETIME
+  #export TZ=UTC
+  #make -f makefile.linux-mingw $MAKEOPTS DEPSDIR=$STAGING tacocoind.exe USE_UPNP=0 DEBUGFLAGS="-frandom-seed=tacocoin" USE_SSE2=1
+  #$HOST-strip tacocoind.exe
+  #mkdir $OUTDIR/daemon
+  #cp tacocoind.exe $OUTDIR/daemon
+  #cd ..
   mkdir nsis
   git archive HEAD | tar -x -C nsis
   cd nsis/src
