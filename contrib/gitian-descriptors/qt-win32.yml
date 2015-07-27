@@ -112,7 +112,7 @@ script: |
 
 
 
-  #
+#
 #  HOST=i686-w64-mingw32
 #  INSTDIR="$HOME/qt/"
   #
