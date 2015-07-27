@@ -56,11 +56,11 @@ script: |
   #mkdir $OUTDIR/daemon
   #cp tacocoind.exe $OUTDIR/daemon
   #cd ..
-  mkdir nsis
-  git archive HEAD | tar -x -C nsis
-  cd nsis/src
-  mkdir ../release
-  cp ../../release/* ../release/
+  #mkdir nsis
+  #git archive HEAD | tar -x -C nsis
+  #cd nsis/src
+  #mkdir ../release
+  #cp ../../release/* ../release/
   #cp ../../src/*.exe .
-  makensis ../share/setup.nsi
-  cp ../share/tacocoin-*-win32-setup.exe $OUTDIR/
+  #makensis ../share/setup.nsi
+  #cp ../share/tacocoin-*-win32-setup.exe $OUTDIR/
