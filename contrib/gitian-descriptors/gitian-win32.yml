@@ -4,6 +4,7 @@ suites:
 - "precise"
 architectures:
 - "i386"
+- "amd64"
 packages:
 - "mingw-w64"
 - "g++-mingw-w64"
@@ -16,7 +17,7 @@ remotes:
 - "url": "https://github.com/sjwcoin/tacocoin.git"
   "dir": "tacocoin"
 files:
-- "qt-win32-4.8.3-gitian-r4.zip"
+- "qt-win32-5.2.0-gitian-r4.zip"
 - "boost-win32-1.55.0-gitian-r6.zip"
 - "bitcoin-deps-win32-gitian-r9.zip"
 script: |
@@ -26,7 +27,7 @@ script: |
   #
   mkdir -p $STAGING
   cd $STAGING
-  unzip ../build/qt-win32-4.8.3-gitian-r4.zip
+  unzip ../build/qt-win32-5.2.0-gitian-r4.zip
   unzip ../build/boost-win32-1.55.0-gitian-r6.zip
   unzip ../build/bitcoin-deps-win32-gitian-r9.zip
   cd $HOME/build/
