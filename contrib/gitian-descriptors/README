@@ -48,7 +48,17 @@ Once you've got the right hardware and software:
     git pull
     ./bin/gbuild --commit tacocoin=HEAD ../tacocoin/contrib/gitian-descriptors/gitian.yml
     mv build/out/* ~/made_tacos/linux/
-	
+
+Expected SHA256 hashes for bin/32:
+
+    52c87de9db9d8de083fa19668077c8edeb28a2a590e5dc3f553a000ab0c4a151  tacocoind
+    030a89dfc56598bf2807920e1311ee0413c3f6062abc970d13ff44097a835e8f  tacocoin-qt
+
+Expected SHA256 hashes for bin/64:
+
+    75e575c9e4b17b98c81ae5430c8a1bbd5e0a4d1d77a55432903cdee2c772534b  tacocoind
+    8900b27ead05c22aa17f8157de827683a9f7b898c421fcd296acee86ee962904  tacocoin-qt
+
     # Build Win32 dependencies: (only needs to be done once, or when dependency versions change)
     ./bin/gbuild --commit tacocoin=HEAD ../tacocoin/contrib/gitian-descriptors/boost-win32.yml
     mv build/out/boost-win32-1.55.0-gitian-r6.zip inputs/
@@ -56,9 +66,20 @@ Once you've got the right hardware and software:
     mv build/out/bitcoin-deps-win32-gitian-r9.zip inputs/
     ./bin/gbuild --commit tacocoin=HEAD ../tacocoin/contrib/gitian-descriptors/qt-win32.yml
     mv build/out/qt-win32-4.8.3-gitian-r4.zip inputs/
+
+Expected SHA256 hashes for intermediate inputs:
+
+    add147712daaeaecb69086aea8633efe9d26993956b6ad9140d872cc07d078cd  boost-win32-1.55.0-gitian-r6.zip
+    368ffba5cc0431c11beb555ef2d65402ecc9e54491045c0ae48f3cbae1b9817e  bitcoin-deps-win32-gitian-r9.zip
+    018bdc197e2d043348f4cf0942470965be0792d66143fc4e2a2a7dc8e7599a03  qt-win32-4.8.3-gitian-r4.zip
+
     # Build Win32 release:
     ./bin/gbuild --commit tacocoin=HEAD ../tacocoin/contrib/gitian-descriptors/gitian-win32.yml
     mv build/out/tacocoin-qt.exe ~/made_tacos/windows/
+
+Expected SHA256 hashes for the windows build:
+
+    1dfa4c973957aa483883da4cebd02164968152090f864e5f2576500ee6f4ad2d  tacocoin-qt.exe
 
 gitian-builder now also supports building using LXC. See
   https://help.ubuntu.com/12.04/serverguide/lxc.html
